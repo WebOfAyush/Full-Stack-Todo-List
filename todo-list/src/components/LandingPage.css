@@ -1,0 +1,125 @@
+/* Import the Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-container {
+  width: 100vw;
+  overflow-x: hidden;
+  text-align: center;
+  color: #fff;
+  scroll-snap-type :y mandatory;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1A1A40;
+  padding: 20px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.landing-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.landing-btn:hover {
+  background: #6f36ff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  /* Make each section take up the full viewport height */
+  padding: 20px;
+}
+
+.features {
+  background: #2A2A72;
+}
+
+.about {
+  background: #3A3A82;
+}
+
+.contact {
+  background: #4A4A92;
+}
+
+.features h2, .about h2, .contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: #3A3A82;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+}
+
+.about p, .contact p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact a {
+  color: #8758ff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+section{
+    scroll-snap-align: start;
+}
