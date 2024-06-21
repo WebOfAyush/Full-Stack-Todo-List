@@ -10,7 +10,9 @@ export const  addTask = async (req,res)=>{
         userId : User._id,
     })
 
-    return res.status(201)
+    return res.status(201).json({
+      message : "task added"
+    })
 }
 export const  getTasks = async (req,res)=>{
     let Tasks = await Todo.find({userId : req.params.id})
